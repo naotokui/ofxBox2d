@@ -42,6 +42,8 @@ void ofxBox2dCircle::setup(b2World * b2dworld, float x, float y, float radius) {
 	body  = b2dworld->CreateBody(&bodyDef);
 	body->CreateFixture(&fixture);
     
+    drawsNose = true;
+    
     alive = true;
 }
 void ofxBox2dCircle::setup(b2World * b2dworld, ofVec2f &pts, float radius) {

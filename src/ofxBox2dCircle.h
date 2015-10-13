@@ -9,6 +9,7 @@ class ofxBox2dCircle : public ofxBox2dBaseShape {
 private:
 	
 	float radius;
+ 	bool drawsNose;
 	
 public:
 	
@@ -25,6 +26,7 @@ public:
 	
 	//------------------------------------------------
 	virtual void draw();
+    	void setDrawsNose(bool flag);
 	
 	//------------------------------------------------
     void addAttractionPoint(float x, float y, float amt=1);
